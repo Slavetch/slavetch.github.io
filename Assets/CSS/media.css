@@ -1,0 +1,96 @@
+@media screen and (max-width: 768px) {
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+	.topnav a.icon {
+		float: right;
+		display: block;
+		margin-top: -17px;
+		color: #000;
+	}
+	header nav {
+		width: 100%;
+ 	}
+	.topnav.responsive {
+		position: relative;
+	}
+	.topnav.responsive a.icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.advantages .advantages_item {
+		width: 45%;
+	}
+	.container form {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 3px;
+ 	}
+	.gallery .photo-itm {
+		 width: 47%;
+	margin-left: 10px;	
+	}
+	#basketball {
+		margin-top: 10px;
+	}
+	.blog-container {
+		width: 38em;
+	}
+	footer nav {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.blog-container {
+		width: 30em;
+	}
+}
+@media screen and (max-width: 420px) {
+	.advantages {
+		flex-direction: column;
+	}
+	.advantages .advantages_item {
+		width: 100%;
+	}
+	.container form {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 3px;
+ 	}
+ 	.gallery .photo-itm {
+	width: 100%;
+	margin: 2px;
+	}
+	/* По WDB:
+	.project .gallery .photo-itm {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 2px;
+	}*/
+	.blog-container {
+		width: 22em;
+	}
+}
+ 
+
+
+
+
+
+
+
+
+
