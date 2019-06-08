@@ -69,7 +69,7 @@ audio {
 }
 .project {
 	position: relative;
-    margin-top:20px;
+        margin-top:20px;
 }
 .gallery {
 	display: flex;
@@ -332,41 +332,3 @@ textarea{
   height: 700px;  /* The height is 400 pixels */
   width: 100%;  /* The width is the width of the web page */
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
