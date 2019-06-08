@@ -69,6 +69,7 @@ audio {
 }
 .project {
 	position: relative;
+        margin-top:20px;
 }
 .gallery {
 	display: flex;
