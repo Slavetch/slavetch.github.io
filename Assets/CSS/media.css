@@ -6,7 +6,7 @@
 		float: right;
 		display: block;
 		margin-top: -17px;
-		color: #000;
+		color: #fff;
 	}
 	header nav {
 		width: 100%;
@@ -25,15 +25,53 @@
 		display: block;
 		text-align: left;
 	}
+/*------------------HEADER-------------------*/
+ 
+	header .all-header {
+		width: 100%;
+	 	display: grid; 
+		background-color: #000;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: auto auto;
+		}
+	.all-header .graficlogo {
+		width: 90%;
+		padding: 15px;
+		box-sizing: border-box;
+		grid-area: 1/1/2/2; 
+	}
+	.graficlogo img {
+		width: 100%;
+	}
+	.all-header .slogan {
+		width: 100%;
+		box-sizing: border-box;
+		grid-area: 1/2/2/3s;
+	    margin: 0 auto;
+	    padding: 13px 12px;
+	    font-size: 12px;
+    
+	}
+	.all-header nav {
+	 	width: 100%;
+	 	display: flex;
+	 	grid-area: 2/1/3/3;
+	}
+	.all-header .topnav {
+		font-size: 14px;
+		margin-bottom: 23px;
+	}
+	 
+	/*-------------------MAIN----------------*/
+
 	.advantages .advantages_item {
 		width: 45%;
 	}
 	.container form {
 	width: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	margin: 3px;
  	}
 	.gallery .photo-itm {
 		 width: 47%;
@@ -45,8 +83,13 @@
 	.blog-container {
 		width: 38em;
 	}
+	/*--------------------FOOTER------------------*/
 	footer nav {
 		width: 100%;
+	}
+	footer #footer-logo-social {
+	    grid-template-columns: 0.6fr 1.3fr 0.1fr;
+	    grid-gap: 4px;
 	}
 }
 
@@ -67,7 +110,6 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 3px;
  	}
  	.gallery .photo-itm {
 	width: 100%;

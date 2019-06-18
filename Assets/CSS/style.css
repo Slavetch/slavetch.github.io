@@ -1,56 +1,82 @@
 @import 'media.css';
+/*------------------GENERAL-------------------*/
 
-* {
-	margin: 0;
-	padding: 0;
+body {
+	font-family: raleway, sans-serif;
+	background: #1d0f0f;
 }
 a {
 	text-decoration: none;
-	color: #000;
+	color: #fff; 
 }
-body {
-	font-family: raleway, sans-serif;
+audio {
+	display: block;
+	max-width: 100%;
+	margin: 35px auto;
+}
+h1 {
+ 	text-align: center;
+ 	color: #fff;
+}
+h2 {
+	color: #FF8800;
+	text-align: center;
+} 
+p {
+	color: #fff;
 }
 /*-----------HEADER------------*/
-.logo {
+.all-header {
 	width: 100%;
- 	display: flex;
-	justify-content: center;
+ 	display: grid; 
 	background-color: #000;
+	grid-template-columns: 1fr 1fr 4fr; 
 }
 .graficlogo {
-	padding: 5px;
-	max-width: 100%;
+	
+	padding: 15px;
 	box-sizing: border-box;
+	grid-area: 1/1/2/2; 
 }
-/*--------HEADER MENU--------------*/
+.graficlogo img {
+	width: 100%;
+}
+.slogan {
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 70px;
+	padding: 8px 10px;
+	grid-area: 1/2/2/5;    
+}
 nav {
- 	margin: auto;
- 	width: 800px;
- 	height: 50px;
+ 	margin-bottom: 35px;
+ 	width: 100%;
+ 	display: flex;
+ 	grid-area:2/3/3/5;
 }
 .topnav {
-	background-color: #fff;
+	background-color: #000;
 	font-size: 14px;
-	margin-top: 40px;
+	margin-top: 30px;
+	margin-left: 10px;
 	width: 100%;
+
 }
 .topnav a {
 	text-align: center;
-	padding: 14px 16px;
+	padding: 10px 23px;
 }
 .topnav a:hover {
-	border-bottom: 2px solid #000;
-	color: #000;
+	border-bottom: 2px solid #FF8800;
+	color: #FF8800;
     text-decoration: none;
+    font-style: bold;
 }
 .topnav .icon {
 	display: none;
 }
 /*---------------------MAIN---------------*/
-audio {
-	max-width: 100%;
-}
+
 .advantages_container {
 	display: flex;
 	justify-content: center;
@@ -67,9 +93,11 @@ audio {
 .advantages_item {
 	width: 30%;
 }
+/*-----------------------PROJECTS-----------------------*/
 .project {
 	position: relative;
-        margin-top:20px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 .gallery {
 	display: flex;
@@ -78,7 +106,7 @@ audio {
 	flex-wrap: wrap;
 	width: 87%;
 	margin:auto;
-	margin-bottom: 40px;
+	 
 }
 .photo-itm {
 	width: 33%;
@@ -94,35 +122,45 @@ audio {
 /*---------------FEEDBACK---------------*/
 .container {
 	max-width: 100%;
-	background: #000;
+	background: #1d0f0f;
  }
+ form {
+	max-width: 100%;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
 .form-control {
-	border: 2px solid black;
+	border: 2px solid #fff;
 	text-align: center;
- 	background-color: aqua;
+ 	background-color: #FF8800;
  	font-size: 16px;
-	min-width:22%;
+	width:75%;
 	margin: 3px;
 	height: 50px;
+	justify-self: center;
+	border-radius: 12px;
  }
 #message {
  	text-align: justify;
+ 	grid-area: 2/1/3/4;
+ 	min-width: 90%;
+ 	height: auto;
+ 	border-radius: 0;
 }
-/*input::-webkit-input-placeholder { 
-	color: green; 
+input::-webkit-input-placeholder { 
+	color: #000; 
 }
-form {
-	max-width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}*/
-h1 {
- 	text-align: center;
- 	color: #fff;
-} 
 .btn-success {
-	margin-right: 4px;
+	background: #000;
+	color: #fff;
+	margin-bottom: 34px;
+	border-radius: 12px;
+	border-color: #FF8800;
+	width: 28%;
+	height: 20px;
+	justify-self: center;
 }
 /*-------------------FOOTER----------------------*/
 footer {
@@ -139,9 +177,14 @@ footer .topnav a {
 	font-size: 14px;
 	margin-left: 4px;
 	text-align: center;
-	padding: 14px 16px 4px;}
-
-.social img {
+	padding: 14px 16px 4px;
+	
+}
+footer nav .topnav a:hover {
+	color: #fff;
+	border-bottom: 1px solid #FF8800;
+}
+footer .social img {
 	background-color: white;
  	margin-left: 5%;
  	margin-right: 5%;
@@ -149,42 +192,53 @@ footer .topnav a {
  	border-radius: 17px;
  	width: 88%;
 }
-.social img:hover {
-	background-color: #FEFE0A;
+footer .social img:hover {
+	background-color: #FF8800;
  	border-radius: 0;
 }
-p {color: cadetblue;}footer nav{
+footer p {
+	color: #FF8800;}
+footer nav {
 	height: 23px;
+	margin-bottom: 35px;
+ 	width: 100%;
+ 	display: flex;
 }
 footer .topnav {
 	background-color: #000;
 	margin-top: 10px;
+	margin-left: -9px;
 }
-footer nav .topnav a:hover {
-	border-bottom: 1px solid #fff; 
-	color: #fff;
- }
-footer .logo-social{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+#footer-logo-social{
+	display: grid;
+	grid-template-columns: 0.3fr 1.3fr;
+	grid-gap: 36px;
 	align-items: center;
 	width: 100%;
 }
 footer .logo{
-	width: 23%;
-	background-color: #000;
+	grid-area: 1/1/3/2;
+}
+footer .graficlogo {
+	max-width: 90%;
+}
+footer .graficlogo img {
+	width: 100%;
 }
 footer .social{
+	grid-area: 1/2/2/3;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 39%;
- }
+	justify-content: space-around;
+}
+footer .social a {
+	padding: 0 4px;
+}
 footer .signature{
-	width: 23%;
+	grid-area: 2/2/3/3;
+	width: 100%;
  	font-size: 80%;
- 	padding-right: 2%;
+ 	padding-bottom: 2%;
 } 
 /*---------------------БЛОГ---------------------*/
 .blog-container {
@@ -324,7 +378,7 @@ textarea{
 
 /*-----------------LOCATION----------------*/
 #location_banner{
-	color: #000;
+	color: #fff;
 	font-size: 23px;
 }
 /* Set the size of the div element that contains the map */
@@ -332,3 +386,41 @@ textarea{
   height: 700px;  /* The height is 400 pixels */
   width: 100%;  /* The width is the width of the web page */
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
