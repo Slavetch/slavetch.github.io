@@ -28,16 +28,16 @@ p {
 /*-----------HEADER------------*/
 .all-header {
 	width: 100%;
- 	display: grid; 
+ display: grid; 
 	background-color: #000;
 	grid-template-columns: 1fr 1fr 4fr; 
 }
 .graficlogo {
-	
 	padding: 15px;
 	box-sizing: border-box;
 	grid-area: 1/1/2/2; 
 }
+
 .graficlogo img {
 	width: 100%;
 }
@@ -60,11 +60,13 @@ nav {
 	margin-top: 30px;
 	margin-left: 10px;
 	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
 }
 .topnav a {
 	text-align: center;
-	padding: 10px 23px;
+	padding: 10px 0.5rem;
 }
 .topnav a:hover {
 	border-bottom: 2px solid #FF8800;
